@@ -1,0 +1,119 @@
+/* General reset for margin, padding and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and font settings for the entire page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e7f0f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* The main container for the form */
+.container {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+/* Title of the page */
+h1 {
+    color: #5a67d8;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Styling for the input fields */
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+    border-color: #5a67d8;
+    outline: none;
+}
+
+/* Styling for the form's submit button */
+button[type="submit"] {
+    padding: 14px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #5a67d8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #4c51bf;
+    transform: scale(1.05);
+}
+
+/* The CGPA result section */
+#cgpa-result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Success message styles */
+#cgpa-result.success {
+    background-color: #e6ffed;
+    color: #388e3c;
+}
+
+/* Error message styles */
+#cgpa-result.error {
+    background-color: #ffebee;
+    color: #d32f2f;
+}
+
+/* Adding responsiveness for mobile devices */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+
+    input[type="number"], input[type="text"] {
+        font-size: 14px;
+    }
+}

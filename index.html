@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAC University CGPA Calculator</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <h1>BRAC University CGPA Calculator</h1>
+    <form id="cgpa-form">
+        <div>
+            <label>Subject 1 Grade: </label>
+            <input type="text" class="grade" placeholder="Grade (e.g. A, B, C)">
+            <input type="number" class="credit" placeholder="Credits">
+        </div>
+        <div>
+            <label>Subject 2 Grade: </label>
+            <input type="text" class="grade" placeholder="Grade (e.g. A, B, C)">
+            <input type="number" class="credit" placeholder="Credits">
+        </div>
+        <div>
+            <label>Subject 3 Grade: </label>
+            <input type="text" class="grade" placeholder="Grade (e.g. A, B, C)">
+            <input type="number" class="credit" placeholder="Credits">
+        </div>
+        <!-- Add more subjects as needed -->
+        <button type="button" onclick="calculateCGPA()">Calculate CGPA</button>
+    </form>
+    <div id="cgpa-result"></div>
+
+    <!-- Link to the external JS file -->
+    <script src="static/js/cgpa_calculator.js"></script>
+</body>
+</html>
